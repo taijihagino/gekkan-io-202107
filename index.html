@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Node-RED Sample</title>
+  </head>
+  <bodY>
+    <form class="form" action="http://localhost:1880/kogakusha" method="post">
+ 
+      <div class="item">
+        <label class="label_left" for="name">Nama</label><br>
+        <input id="name" name="name" type="text" placeholder="名前を入力" required><br>
+      </div>
+
+      <div class="item">
+        <label  class="label_left" for="email">Email</label><br>
+        <input id="email" name="email" type="email" placeholder="メールアドレスを入力" required><br>
+      </div>
+
+      <div class="item">
+        <fieldset>
+          <legend>Job</legend>
+          <label for="engineer">技術職</label>
+          <input type="checkbox" name="job" value="技術職" id="engineer"><br>
+          <label for="sales">営業職</label>
+          <input type="checkbox" name="job" value="営業職" id="sales"><br>
+          <label for="staff">スタッフ職</label>
+          <input type="checkbox" name="job" value="スタッフ職" id="staff"><br>
+          <label for="executive">経営</label>
+          <input type="checkbox" name="job" value="経営" id="executive"><br>
+          <label for="others">その他</label>
+          <input type="checkbox" name="job" value="その他" id="others"><br>
+        </fieldset>
+      </div>
+
+      <div class="buttons">
+        <input type="submit" value="登録"><br>
+        <input type="reset" value="リセット">
+      </div>
+
+    </form>
+  </bodY>
+<html>

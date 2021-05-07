@@ -1,0 +1,73 @@
+[
+    {
+        "id": "5e6a2849.c2dc68",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a4c8f5e9.aa6278",
+        "type": "http in",
+        "z": "5e6a2849.c2dc68",
+        "name": "",
+        "url": "/kogakusha",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "1e7a7a5.42d6a86",
+                "ab09b56e.b9f1c8"
+            ]
+        ]
+    },
+    {
+        "id": "df21ace7.cc99e",
+        "type": "http response",
+        "z": "5e6a2849.c2dc68",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ab09b56e.b9f1c8",
+        "type": "debug",
+        "z": "5e6a2849.c2dc68",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1e7a7a5.42d6a86",
+        "type": "template",
+        "z": "5e6a2849.c2dc68",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Node-RED Sample</title>\n  </head>\n  <bodY>\n    以下の情報が送信されました\n    名前：{{payload.name}} <br>\n    メール：{{payload.email}} <br>\n    職業：{{payload.job}} <br>\n  </bodY>\n<html>\n",
+        "output": "str",
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "df21ace7.cc99e"
+            ]
+        ]
+    }
+]

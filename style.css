@@ -1,0 +1,60 @@
+.form{
+   width: 100%;
+   margin:0 auto;
+   border: 1px solid #9db0bb;
+   padding: 50px;
+   box-sizing: border-box;
+ }
+ 
+ .item{
+   margin-bottom: 20px;
+ }
+ 
+ .label_left{
+   display: inline-block;
+   width:25%;
+   border-left: solid 5px #7650e0;
+   padding-left: 15px;
+   vertical-align:top;
+ }
+ 
+.form input[type="text"], 
+.form input[type="email"] {
+     padding: 10px;
+     width: 50%;
+ }
+ 
+.form textarea{
+   padding: 10px;
+   height: 100px;
+   font-size: 14px;
+   width: 65%;
+ }
+ 
+.form select{
+   height: 35px;
+   width: 65%;
+ }
+ 
+ .buttons{
+   display: flex;
+   justify-content: center;
+ }
+ 
+.form input[type="submit"]{
+   background: #7650e0;
+   color: white;
+   font-size:16px;
+   font-weight:bold;
+   padding: 10px 20px;
+   margin: 0 5px;
+ }
+ 
+.form input[type="reset"]{
+   background: rgb(65, 65, 65);
+   color: white;
+   font-size:16px;
+   font-weight:bold;
+   padding: 10px 20px;
+   margin: 0 5px;
+ }
